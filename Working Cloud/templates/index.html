@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Image Prediction</title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="color: aliceblue; font-size: 60px; background-color: black; ">DeepFake Image Detection</h1>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".jpg, .jpeg, .png" required id="button">
+        <button type="submit" id="abc">Upload & Predict</button>
+    </form>
+
+    {% if image_path %}
+        <div class="result">
+            <p style="color: aliceblue; font-size: xx-large;">Prediction : {{ predicted_class }}</p>
+            <img src="{{ image_path }}" alt="Uploaded Image">
+
+        </div>
+    {% endif %}
+</body>
+</html>

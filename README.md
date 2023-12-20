@@ -23,12 +23,7 @@ This repository contains code for a DeepFake Image Detection project. The projec
 - Python 3.x
 - TensorFlow
 - Keras
-- Flask
-- Other dependencies can be installed using `pip install -r requirements.txt`.
-
-## Contributors
-
-- [Your Name]
+- Flask.
 
 ## License
 
@@ -36,6 +31,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 Feel free to contribute, report issues, and provide feedback.
 
----
-
-Make sure to replace `[Your Name]` with your actual name in the Contributors section. Additionally, if your project uses a different license, update the License section accordingly.
